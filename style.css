@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
+  /* font-family: "Nunito Sans", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Roboto Condensed", sans-serif; */
+  /* font-family: "Oswald", sans-serif; */
+  /* font-family: "Lato", sans-serif; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  height: 90vh;
+}
+
+.advance-letter {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 0.6em;
+  color: #dbdee1;
+  /* padding-bottom: 1em; */
+}
+
+.advance-p {
+  text-align: center;
+  color: #dbdee1;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  /* padding-bottom: 2em; */
+}
+
+.main-header {
+  text-align: center;
+}
+
+.the-line {
+  width: 5em;
+  height: 0.02em;
+  margin: 0 auto;
+  border: none;
+  margin-bottom: 3em;
+  background-color: rgb(83, 81, 81);
+  border-radius: 50px;
+  margin-top: 2em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1e1f22;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #ff00ff, 0 0 20px 0 #ff00ff, 0 0 30px 0 #ff00ff,
+    0 0 40px 2px #ff00ff;
+  animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 10px 0 #6eda09, 0 0 20px 0 #1900ff, 0 0 30px 0 #ff0000,
+      0 0 40px 0 #ff00ff;
+  }
+  50% {
+    box-shadow: 0 0 10px 0 #00ffff, 0 0 20px 0 #b0ffb7, 0 0 30px 0 #00ffdd,
+      0 0 40px 0 #ff00ff;
+  }
+  100% {
+    box-shadow: 0 0 10px 0 #00c3ff, 0 0 20px 0 #bbff00, 0 0 30px 0 #ff00ff,
+      0 0 40px 2px #a200ff;
+  }
+}
+
+#search-input {
+  width: 30em;
+  background-color: #1e1f22;
+}
+
+.form-section,
+.search-section,
+.table-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 3em;
+  background-color: #313338;
+  border-radius: 8px;
+}
+
+.search-section {
+  height: 8em;
+}
+
+#advanced-words {
+  width: 30em;
+  background-color: #1e1f22;
+}
+
+.advance-word {
+  margin-top: 1em;
+}
+#expressions {
+  width: 30em;
+  background-color: #1e1f22;
+}
+
+.expressions,
+.advance-word {
+  color: #dbdee1;
+}
+
+#delete-all {
+  background-color: rgb(243, 62, 62);
+  border: none;
+}
+
+#delete-all:hover {
+  background-color: rgb(233, 88, 88);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="text"],
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #5f5f61;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #43444b;
+}
+
+#error-message {
+  color: red;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #585858;
+  padding: 8px;
+  color: #dbdee1;
+  text-align: left;
+}
+
+#delete-all {
+  margin-top: 2em;
+}
+
+.form-section {
+  display: flex;
+}
+
+.container-2 {
+  border: 1px solid #ccc;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/cool.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.container-2 #count {
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.header-text {
+  color: #dbdee1;
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
